@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
    get 'article/list' => 'article#list'
+   get 'article/new' => 'article#new'
 
-
+   get "article/application"=> "article#application"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

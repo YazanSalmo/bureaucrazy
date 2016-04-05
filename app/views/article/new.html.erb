@@ -1,0 +1,28 @@
+<%= form_tag do %>
+
+  <%= text_field(:articles, :title)%>
+
+
+  <br><%= label_tag(:title, "Title:")%>
+  <%= text_field_tag(:title,"Default Text",:class=> "textfield")%>
+
+  <br><%= check_box_tag(:berlin)%>
+  <%= label_tag(:berlin,"I Live in Berlin")%>
+
+  <br><%= check_box_tag(:germany)%>
+  <%= label_tag(:germany,"That is in Germany")%>
+
+
+  <br />
+
+  <%= radio_button_tag(:age ,"child") %>
+  <%= label_tag(:age_child , "I am younger than 18")%>
+
+  <%= radio_button_tag(:age , "adult")%>
+  <%=label_tag(:age_adult , "I am older than 18")%>
+
+  <%= radio_button_tag(:age , "old")%>
+  <%= label_tag(:age_old , "I am older than 90")%>
+  
+  <br><%= submit_tag("Save")%>
+<% end %>

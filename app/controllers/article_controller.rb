@@ -1,5 +1,8 @@
 class ArticleController < ApplicationController
   layout 'standard'
+  def application
+    
+  end
   def list
     #here i will list all my articles
 
@@ -38,6 +41,7 @@ class ArticleController < ApplicationController
    end
 
    def new
+    @article = Article.new
      # here i create a new article
    end
 
